@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Merriweather:wght@300;400&family=Playfair+Display:ital,wght@0,500;1,400&family=Poppins:ital,wght@0,300;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body, html{
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.5rem;
+    overflow-x: hidden ;
+}
+.hamburger{
+    display: none;
+}
+h1{
+    font-family: "Manrope";
+    font-size:2.5rem;
+    line-height: 3rem;
+}
+h2{
+    font-family: "Manrope";
+    font-size: 2rem;
+    line-height: 2.7rem;
+}
+h3{
+    font-family: "Manrope";
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+button{
+    padding: .8rem;
+}
+.btn{
+    color: #fff;
+    background: orangered;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all ease 1s;
+}
+.btn:hover{
+    opacity: .7;
+    letter-spacing: .5px;
+}
+header, .navbar, .first-class, .second-class, .third-class{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 1rem 4rem;
+    font-family: "Manrope";
+}
+.logo, .navbar, .left-second-class, .right-second-class, .left-first-class, .right-first-class, .right-third-class, .left-third-class{
+    width: 100%;
+}
+
+header .navbar .navLinks ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+header .navLinks ul::after{
+    content: '';
+    border:  1px solid #ccc;
+}
+.navLinks ul li{
+    margin: 0 1rem;
+}
+.navLinks ul li a {
+    position: relative;
+    transition: ease  all 2s;
+    text-decoration: none;
+    color: #000;
+}
+.navLinks ul li a:hover{
+    bottom:2px;
+}
+
+section{
+    padding: 4rem 6rem;
+}
+
+.left-first-class h1{
+    width: 65%;
+}
+.left-first-class button {
+    margin: 2rem 0;
+}
+.right-first-class{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.left-first-class small{
+    margin-top: .5rem;
+}
+.img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.card1,.card2{
+    font-family: "Manrope";
+    position: absolute;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: .5rem .8rem;
+    border-radius: 30px;
+    background: #fff;
+    display: flex;
+}
+.card1{
+    left: 0;
+    top: 30%;
+}
+.card1 span{
+    background: green;
+    color: #fff;
+    border-radius: 50%;
+    padding: .5rem;
+}
+.card2{
+    padding-bottom: 2rem;
+    right: 0;
+    bottom: 20%;
+}
+.second-class{
+    background: #ccc;
+}
+.left-second-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-second-class h1{
+    width: 65%;
+    margin-bottom: 2.5rem;
+}
+.left-second-class .flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 60%;
+    position: relative;
+}
+.left-second-class span{
+    background: #fff;
+    height: 80%;
+    padding:10px 8px 0;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.flex1 i{
+    background-color: #fff;
+    padding: .3rem;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: .5rem;
+} 
+.text h4{
+    font-family: "Manrope";
+    font-size: 1.15rem;
+}
+.flex1{
+    display: flex;
+}
+.right-second-class h2{
+    width: 65%;
+}
+.flex-col{
+    margin: 1.5rem 0;
+}
+.flex-col .col{
+    background: #fff;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.left-third-class h1{
+    width: 60%;
+    margin-bottom: 1rem;
+}
+.left-third-class p{
+    width: 60%;
+    margin-top: 1rem;
+}
+.right-third-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    gap: 1rem;
+}
+.flex-col2{
+    display: flex;
+}
+.flex-col2 .text{
+    margin-left: .5rem;
+}
+.flex-col2 .span{
+    position: relative;
+}
+.flex-col2 .span span{
+    background: purple;
+    border-radius: 50%;
+    color: #fff;
+    padding: 1rem;
+}
+.flex-col2 .vertical{
+    content: '';
+    border: .1px dotted orangered;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+  
+}
+.flex-col2 .text p{
+    width: 60%;
+}
+.fourth-class{
+    align-items: center;
+    text-align: center;
+    background-color: #ccc;
+}
+.fourth-class p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.fourth-class h1{
+  display: flex;
+  justify-self:center ;
+  text-align: center;
+  margin: 1rem 22rem 3rem 22rem;
+}
+.fourth-class .grid-col{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.grid-1{
+    height: 200px;
+    width: 200px;
+    background: #fff;
+    padding: 2rem;
+    position: relative;
+    transition: ease all 1s;
+}
+.grid-1:hover{
+    color: #fff;
+    bottom: 5px;
+    background: orangered;
+}
+.grid-1 p{
+    font-size: 1.3rem;
+}
+.learn{
+    padding-top: .5rem;
+    display: flex;
+    justify-content:  flex-end;
+}
+.fifth-class{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+}
+.fifth-class .img{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.fifth-class .img .img-1, .fifth-class .img .img-2{
+    width: 100%;
+}
+.fifth-class .img .img-1{
+    background-image: url(images/left-img-car.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fifth-class .img .img-2{
+    background-image: url(images/img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.orange-bg{
+background: orangered;
+color: #fff;
+display: flex;
+align-items: center;
+text-align: center;
+width: 70%;
+height: 100%;
+position: relative;
+left: 30%;
+}
+.orange-bg h3{
+    width: 70%;
+    margin: auto;
+}
+.row-number{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+.row-number .flex-row h2{
+    color: purple;
+}
+.sixth-class{
+    background: rgb(237, 233, 233);
+}
+.sixth-class h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sixth-class .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2em;
+}
+.sixth-class .flex-row{
+    width: 200px;
+    height: 150px;
+}
+footer{
+    padding: 4rem 6rem 1rem;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom .navLinks{
+    width: 100%;
+}
+.footer-bottom .navLinks ul{
+  list-style: none;
+    display: flex;
+}
+.footer-bottom .navLinks ul li{
+    margin: 0 1rem;
+}
+.footer-bottom .navLinks ul li a {
+    position: relative;
+    transition: ease  all 2s;
+    text-decoration: none;
+    color: #fff;
+}
+.footer-bottom .navLinks ul li a:hover{
+    bottom:2px;
+}
+
+
+@media(max-width: 800px){
+    .first-class, .second-class, .third-class{
+        flex-direction: column;
+    } 
+    .fourth-class h1{
+        margin: 0;
+    }
+    .flex-col2{
+       margin-top: 2rem;
+    }
+    .footer-top, .footer-bottom{
+        flex-direction: column;
+    } 
+}
+@media(max-width: 500px){
+  
+    .row-number{
+        flex-direction: column;
+        width: 100%;
+    }
+    .fifth-class{
+        height: 100%;
+    }
+    section, footer{
+        padding: 2rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-first-class h1, .left-second-class h1, .left-second-class .flex-col, .right-second-class h2, .left-third-class p, .left-third-class h1, .flex-col2 .text p,  .orange-bg{
+        width: 100%;
+    }
+    .fourth-class .grid-col{
+        margin-top: 2rem;
+    }
+    .grid-1,  .sixth-class .row .flex-row{
+        justify-self: center;
+        margin: auto;
+        align-self: center;
+    }
+  .footer-top, .footer-bottom, .footer-bottom .navLinks ul{
+      flex-direction: column;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+.displayHeader{
+ flex-direction: column; 
+ background-color: #ccc; 
+    height: 100vh;
+    width: 100vw; 
+}
+.displayNavbar{
+  display: flex;  
+}
+ .navbar{
+    display: none;
+    flex-direction: column;
+}
+header .navbar .navLinks ul{
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .navbar .navLinks ul li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.displayNavbar{
+    display: flex;
+}
+.hamburger{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+header .logo{
+    display: flex;
+    justify-content: start;
+}
+
+}
+.rate {
+    float: left;
+    height: 6px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:15px;
+    color:#deb217;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: yellow;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+ color: #c59b08;
+}
