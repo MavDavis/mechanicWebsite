@@ -501,7 +501,7 @@ footer {
 
 .review .row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
 }
 
@@ -572,6 +572,14 @@ footer {
     margin-bottom: 0.2rem;
     background: #fff;
     display: flex;
+    justify-content: space-between;
+}
+
+.faq .main-col .symbol {
+    padding: 0.7rem;
+    background: orangered;
+    color: #fff;
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
