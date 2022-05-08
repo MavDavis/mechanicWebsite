@@ -499,6 +499,81 @@ footer {
     bottom: 2px;
 }
 
+.review .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.review,
+.faq {
+    background: #ccc;
+}
+
+.review h1 {
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.review .row .col-1 {
+    padding: 2rem;
+    margin: auto;
+    max-width: 300px;
+    background: #ffff;
+}
+
+.review .row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    color: rgb(44, 44, 44);
+    position: relative;
+}
+
+.review .row2 .col-2 {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.review .row2 .col-3 {
+    position: absolute;
+    left: 80%;
+    padding: 5px;
+}
+
+.review .row2 .col-3 span:hover {
+    color: #ffff;
+    background: #000;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.review .row2 .col-2 div:hover {
+    color: orangered;
+}
+
+.faq h2 {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.faq .main-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq .main-col .col {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+    background: #fff;
+    display: flex;
+}
+
 @media (max-width: 800px) {
     .first-class,
     .second-class,
@@ -580,7 +655,9 @@ footer {
     .left-third-class h1,
     .flex-col2 .text p,
     .orange-bg,
-    .center {
+    .center,
+    .review h1,
+    .faq h2 {
         width: 100%;
     }
     .fourth-class .grid-col {
