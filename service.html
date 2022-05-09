@@ -32,6 +32,67 @@
             </div>
         </div>
     </header>
+    <style>
+        .cont {
+            position: relative;
+            font-size: 22px;
+            display: block;
+            cursor: pointer;
+        }
+        
+        .btn {
+            max-width: 150px;
+            margin: auto;
+        }
+        
+        span input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: -25px;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background: green;
+        }
+        
+        .cont:hover input~.checkmark {
+            background: rgb(63, 103, 63);
+        }
+        
+        .cont input:checked~.checkmark {
+            background: rgb(39, 109, 39);
+        }
+        
+        .cont .checkmark:after {
+            content: "";
+            position: absolute;
+            /* display: none; */
+        }
+        
+        .cont input:checked~.checkmark:after {
+            display: block;
+        }
+        
+        .cont .checkmark:after {
+            left: 9px;
+            top: 5px;
+            height: 10px;
+            width: 5px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
 </head>
 
 <body>
@@ -97,19 +158,29 @@
         <div class="left">
             <h2>How we work and the process we follow</h2>
             <div class="left-col">
-                <span><input type="radio" name="" id="" /></span>
+                <span class="cont"><input type="checkbox" name="" id="" /><span
+              class="checkmark"
+            ></span
+          ></span>
                 <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,
             veritatis.</span
           >
         </div>
         <div class="left-col">
-          <span><input type="radio" name="" id="" /></span>
+          <span class="cont"
+            ><input type="checkbox" name="" id="" /><span
+              class="checkmark"
+            ></span
+          ></span>
                 <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,
             veritatis.</span
           >
         </div>
         <div class="left-col">
-          <span><input type="radio" name="" id="" /></span>
+          <span class="cont"
+            ><input type="checkbox" name="" id="" />
+            <span class="checkmark"></span
+          ></span>
                 <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,
             veritatis.</span
           >
