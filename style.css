@@ -595,6 +595,104 @@ footer {
     cursor: pointer;
 }
 
+.rate {
+    float: left;
+    height: 6px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 15px;
+    color: #deb217;
+}
+
+.rate:not(:checked)>label:before {
+    content: "★ ";
+}
+
+.rate>input:checked~label {
+    color: yellow;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.display {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.display img {
+    max-width: 100%;
+}
+
+.left,
+.right {
+    flex-basis: 40%;
+    height: 100%;
+}
+
+.first-container .right {
+    background: #000;
+    color: #fff;
+    height: 70%;
+    width: 65%;
+    padding: 2rem;
+    position: absolute;
+    right: 4rem;
+}
+
+.second-container {
+    background: #ccc;
+}
+
+.first-container .right,
+.left-bottom,
+.third-container .left,
+.fourth-container .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.third-container .right,
+.fourth-container .left {
+    display: flex;
+}
+
+.left-bottom {
+    background: #ffffff;
+    padding: 2rem;
+    height: 100%;
+}
+
+.fourth-container {
+    background: rgb(240, 237, 237);
+}
+
 @media (max-width: 800px) {
     .first-class,
     .second-class,
@@ -655,6 +753,12 @@ footer {
         text-align: center;
         flex-direction: column;
     }
+    .first-container .right {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        right: 0rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -708,98 +812,4 @@ footer {
     .fourth-container .left {
         flex-direction: column;
     }
-}
-
-.rate {
-    float: left;
-    height: 6px;
-    padding: 0 10px;
-}
-
-.rate:not(:checked)>input {
-    position: absolute;
-    top: -9999px;
-}
-
-.rate:not(:checked)>label {
-    float: right;
-    width: 1em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 15px;
-    color: #deb217;
-}
-
-.rate:not(:checked)>label:before {
-    content: "★ ";
-}
-
-.rate>input:checked~label {
-    color: yellow;
-}
-
-.rate:not(:checked)>label:hover,
-.rate:not(:checked)>label:hover~label {
-    color: #deb217;
-}
-
-.rate>input:checked+label:hover,
-.rate>input:checked+label:hover~label,
-.rate>input:checked~label:hover,
-.rate>input:checked~label:hover~label,
-.rate>label:hover~input:checked~label {
-    color: #c59b08;
-}
-
-.display {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.display img {
-    max-width: 100%;
-}
-
-.left,
-.right {
-    flex-basis: 40%;
-    height: 100%;
-}
-
-.first-container .right {
-    background: #000;
-    color: #fff;
-    height: 100%;
-    padding: 2rem;
-}
-
-.second-container {
-    background: #ccc;
-}
-
-.first-container .right,
-.left-bottom,
-.third-container .left,
-.fourth-container .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.third-container .right,
-.fourth-container .left {
-    display: flex;
-}
-
-.left-bottom {
-    background: #ffffff;
-    padding: 2rem;
-    height: 300px;
-}
-
-.fourth-container {
-    background: rgb(240, 237, 237);
 }
