@@ -321,6 +321,7 @@ section {
 }
 
 .grid-col {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
@@ -702,7 +703,9 @@ footer {
     }
     .footer-top,
     .footer-bottom,
-    .footer-bottom .navLinks ul {
+    .footer-bottom .navLinks ul,
+    .third-container .right,
+    .fourth-container .left {
         flex-direction: column;
     }
 }
