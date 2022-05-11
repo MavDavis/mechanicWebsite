@@ -436,8 +436,8 @@ section {
 }
 
 .sixth-class .flex-row {
-    min-width: 200px;
-    height: 150px;
+    max-width: 200px;
+    max-height: 2000px;
     background: #fff;
     align-items: center;
     margin: auto;
@@ -449,11 +449,11 @@ section {
 }
 
 .flex-row .logoipsum2 {
-    width: 50%;
-    height: 30%;
+    max-width: 140px;
+    max-height: 200px;
     align-self: center;
     justify-self: center;
-    margin: auto;
+    margin-bottom: 3rem;
 }
 
 footer {
@@ -696,7 +696,9 @@ footer {
 @media (max-width: 800px) {
     .first-class,
     .second-class,
-    .third-class {
+    .third-class,
+    .footer-top,
+    .footer-bottom {
         flex-direction: column;
     }
     .fourth-class h1 {
@@ -704,10 +706,6 @@ footer {
     }
     .flex-col2 {
         margin-top: 2rem;
-    }
-    .footer-top,
-    .footer-bottom {
-        flex-direction: column;
     }
     header {
         display: flex;
@@ -720,9 +718,6 @@ footer {
         background-color: #ccc;
         height: 100vh;
         width: 100vw;
-    }
-    .displayNavbar {
-        display: flex;
     }
     .navbar {
         display: none;
