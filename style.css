@@ -748,6 +748,9 @@ footer {
         text-align: center;
         flex-direction: column;
     }
+    .third-container .right {
+        margin-top: 3em;
+    }
     .first-container .right {
         height: 100%;
         width: 100%;
